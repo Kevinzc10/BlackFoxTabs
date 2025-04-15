@@ -1,0 +1,374 @@
+<html>
+
+<head>
+    <title class="translate" data-translate="newTab">New Tab</title>
+    <link href="/css/ui.css" rel="stylesheet" />
+    <link href="/css/core.css" rel="stylesheet" />
+
+    <link href="/css/material-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="ui left sidebar sidebar-videos vertical inverted menu scale down">
+        <div class="item">
+            <a class="ui logo icon image mini" href="http://motiontabs.com" target="_blank">
+                <img src="/assets/logo.png">
+            </a>
+            <a class="logo-tagline" href="http://motiontabs.com" target="_blank"><b>motiontabs</b></a>
+        </div>
+        <div class="ui top attached tabular menu videos-menu">
+            <a class="active item myVideos-trigger translate" data-translate="myVideos" data-tab="myVideos">
+                <i class="material-icons instruction-inline">video_library</i> My Video Library
+            </a>
+            <a class="item browseAllVideos-trigger translate" data-translate="browseAllVideos"
+                data-tab="browseAllVideos">
+                <i class="material-icons instruction-inline">add_a_photo</i> Find New Videos
+            </a>
+        </div>
+        <div class="ui inverted bottom attached active tab segment myVideos-content" data-tab="myVideos">
+            <div class="item ui segment center aligned sidebar-instruction">
+                <p class="translate" data-translate="videoSelection">
+                    <i class="material-icons instruction-inline">autorenew</i> Every time you open new tab you'll see a
+                    new video from your library &nbsp;&nbsp;&nbsp;
+                    <i class="material-icons instruction-inline">check_circle</i> To always see the same video click on
+                    it to make it default
+                </p>
+            </div>
+            <div class="item ui segment center aligned video-selection">
+                <div class="ui active dimmer videos-loader">
+                    <div class="ui large text loader">Loading</div>
+                </div>
+            </div>
+        </div>
+        <div class="ui inverted bottom attached tab segment browseAllVideos-content" data-tab="browseAllVideos">
+            <div class="item ui segment center aligned sidebar-instruction">
+                <p class="translate" data-translate="browseVideosSelection">
+                    <i class="material-icons instruction-inline">cloud_download</i> Click on a video to download it and
+                    add to your
+                    video library
+                </p>
+            </div>
+            <div class="item ui segment center aligned browse-videos-selection">
+                <div class="ui active dimmer remote-videos-loader">
+                    <div class="ui large text loader">Loading</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui left sidebar sidebar-favorites vertical inverted menu scale down">
+        <div class="ui top attached tabular menu favorites-menu">
+            <a class="active item favorites-trigger translate" data-translate="mostVisited" data-tab="most-visited">Most
+                visited</a>
+            <a class="item favorites-trigger translate" data-translate="bookmarks" data-tab="bookmarks">Bookmarks</a>
+            <a class="item favorites-trigger translate" data-translate="history" data-tab="history">History</a>
+        </div>
+        <div class="ui inverted bottom attached active tab segment favorites-content" data-tab="most-visited">
+            <div class="ui inverted relaxed divided list top-sites-list">
+            </div>
+        </div>
+        <div class="ui inverted bottom attached tab segment favorites-content" data-tab="bookmarks">
+            <div class="ui inverted search bookmark-search">
+                <input class="prompt" type="text" placeholder="Search bookmarks">
+                <div class="results"></div>
+            </div>
+            <div class="ui inverted relaxed divided list bookmarks-list">
+            </div>
+        </div>
+        <div class="ui inverted bottom attached tab segment favorites-content" data-tab="history">
+            <div class="ui inverted relaxed divided list history-list">
+            </div>
+        </div>
+
+    </div>
+    <div class="ui left sidebar sidebar-settings vertical inverted menu scale down">
+        <div class="item">
+            <a class="ui logo icon image mini" href="http://motiontabs.com" target="_blank">
+                <img src="/assets/logo.png">
+            </a>
+            <a class="logo-tagline" href="http://motiontabs.com" target="_blank"><b>motiontabs</b></a>
+        </div>
+        <div class="item">
+            <h2 class="ui header inverted">Features</h2>
+        </div>
+        <div class="item">
+            <div class="ui form inverted settings-item-wrapper">
+                <div class="inline settings-item-title">
+                    <p>Search</p>
+                </div>
+                <div class="inline field settings-item-switch">
+                    <div class="ui toggle checkbox light">
+                        <input type="checkbox" tabindex="0" class="switch-search" checked>
+                        <label class="ui inverted"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ui form inverted settings-item-wrapper">
+                <div class="inline settings-item-title">
+                    <p>Most visited</p>
+                </div>
+                <div class="inline field settings-item-switch">
+                    <div class="ui toggle checkbox light">
+                        <input type="checkbox" tabindex="0" class="switch-most-visited" checked>
+                        <label class="ui inverted"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div style="height: 40px;"></div>
+        </div>
+        <div class="item">
+            <h2 class="ui header inverted">Interface</h2>
+        </div>
+        <div class="item">
+            <div class="ui form inverted settings-item-wrapper">
+                <div class="inline settings-item-title">
+                    <p>Time</p>
+                </div>
+                <div class="inline field settings-item-switch">
+                    <div class="ui toggle checkbox light">
+                        <input type="checkbox" tabindex="0" class="switch-time" checked>
+                        <label class="ui inverted"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ui form inverted settings-item-wrapper">
+                <div class="inline settings-item-title">
+                    <p>Location & Author info</p>
+                </div>
+                <div class="inline field settings-item-switch">
+                    <div class="ui toggle checkbox light">
+                        <input type="checkbox" tabindex="0" class="switch-location-author-info" checked>
+                        <label class="ui inverted"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui left sidebar sidebar-promotions vertical inverted menu scale down">
+        <div class="item">
+            <a class="ui logo icon image mini" href="http://motiontabs.com" target="_blank">
+                <img src="/assets/logo.png">
+            </a>
+            <a class="logo-tagline" href="http://motiontabs.com" target="_blank"><b>motiontabs</b></a>
+        </div>
+        <div class="item">
+            <h2 class="ui header inverted center">Promotions</h2>
+        </div>
+        <div class="item">
+            <p class="ui inverted center">Check out offers tailored for you</p>
+        </div>
+        <div class="item sidebar-promotions-list">
+            <p class="sidebar-promotions-list-error-message">
+                Thanks for checking but currently we don't have offers for you. Please check again later.
+            </p>
+        </div>
+    </div>
+    <div class="pusher">
+        <video autoplay muted loop id="backgroundVideoWrapper">
+            <source type="video/mp4" id="backgroundVideo">
+            <source src="/assets/videos/newyork.MOV" type="video/mp4" id="backgroundVideo">
+        </video>
+
+        <div class="container" id="app">
+
+            <div class="center ui grid search-wrapper">
+                <div class="search-div">
+                    <div class="ui input inline search-input-wrapper">
+                        <input type="text" class="search-input inline" placeholder="Search">
+                    </div>
+                    <i class="fas fa-search search-icon inline soft-hide"></i>
+                </div>
+                <div class="search-suggestions"></div>
+            </div>
+
+            <div class="bottom ui grid">
+                <div class="bottomLeft five wide column bottom aligned">
+                    <div class="spotlight">
+                        <div class="title inline">
+
+                        </div>
+                        <div class="button-map inline" title="Open in Google Maps in new tab">
+                            <img src="/assets/map.png" class="button-map-trigger hide" />
+                        </div>
+                        <div class="description">
+
+                        </div>
+                    </div>
+                    <div class="triggers">
+                        <div class="button-trigger button-videos inline" data-content="Videos">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="button-trigger button-settings inline" data-content="Settings">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <!--
+                        <div class="button-trigger button-favorites inline" title="View Your top visited websites">
+                        <i class="fas fa-star" id="favorites-icon"></i>
+                        </div>
+                        -->
+                        <div class="button-trigger button-play-control inline" data-status="pause" title="Pause video">
+                            <i class="material-icons fix-material-icons" id="play-control-icon">pause</i>
+                        </div>
+                        <div class="button-trigger button-promotions inline"
+                            data-content="Check out promotions tailored for you!">
+                            <i class="fas fa-store" id="promo-icon"></i>
+                        </div>
+                        <div class="button-trigger button-feedback inline" data-content="Feedback / Suggestions">
+                            <i class="far fa-comment" id="feedback-icon"></i>
+                        </div>
+                        <div class="button-trigger button-donate inline" data-content="Coffee?">
+                            <i class="fas fa-mug-hot" id="donate-icon"></i>
+                        </div>
+                        <div class="button-trigger button-music inline"
+                            data-content="Listen to music that matches your mood">
+                            <i class="fas fa-music" id="music-icon"></i>
+                        </div>
+                        <div class="button-trigger button-fullscreen inline"
+                            data-content="Toggle Fullscreen / Or double click anywhere on background">
+                            <i class="fas fa-expand" id="fullscreen-icon"></i>
+                        </div>
+                        <div class="button-trigger button-expand inline"
+                            data-content="Read more about the place in the video">
+                            <i class="fas fa-chevron-up" id="expand-icon" data-direction="down"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bottomMiddle seven wide column bottom aligned">
+                    <div class="most-visited">
+
+                    </div>
+                </div>
+                <div class="bottomRight ui right aligned four wide column">
+                    <div class="row">
+                        <div class="weather hide">
+                            25&deg;C
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="time" title="Click to change time format">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="location">
+
+                        </div>
+                    </div>
+                    <div class="row credits">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="add-own-form-wrapper hide">
+        <form id="add-own-form">
+            <input type="file" name="file" id="add-own-file" accept="video/*"></input>
+        </form>
+    </div>
+
+    <video autoplay muted loop id="videoThumbnail">
+        <source type="video/mp4" id="videoThumbnailSource">
+    </video>
+
+    <!-- PayPal Donate button -->
+    <form action="https://www.paypal.com/donate" method="post" target="_top" class="hide" id="paypal-donate-form">
+        <input type="hidden" name="hosted_button_id" value="Z57XQBRQQ8Z3E" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
+            title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_ME/i/scr/pixel.gif" width="1" height="1" />
+    </form>
+
+
+    <div class="ui page dimmer general">
+        <div class="content">
+            <div class="ui text loader translate" data-translate="loading">Loading</div>
+        </div>
+    </div>
+
+    <div class="ui page dimmer video-loader">
+        <div class="content">
+            <div class="ui text loader translate" data-translate="loading">
+                Please wait...
+                </br>
+                Your video is being downloaded
+            </div>
+        </div>
+    </div>
+
+    <div class="ui basic tiny modal donate">
+        <div class="ui icon header">
+            <i class="fas fa-mug-hot donate-modal-icon"></i>
+            <h1 class="donate-modal-title">You're awesome!</h1>
+        </div>
+        <div class="content donate-modal-content">
+            <p>
+                Hi there, thanks for checking out this message.
+            </p>
+            <p class="justify">
+                We are two independent developers devoted to making better experiences on the web
+                and this extension is a product of our ideas and work in spare time.
+            </p>
+            <p>
+                We're commited to keeping it free forever and you could help us by supporting us
+                however you can, maybe by <strong>buying us a coffee :)</strong>
+            </p>
+        </div>
+        <div class="actions donate-links">
+            <div class="ui basic inverted button donate-patreon">
+                <i class="remove fab fa-patreon"></i>
+                &nbsp; Patreon
+            </div>
+            <!--
+            <div class="ui basic inverted button donate-paypal">
+                <i class="remove fab fa-cc-paypal"></i>
+                &nbsp; PayPal Donate
+            </div>
+            -->
+        </div>
+        <div class="actions">
+            <div class="ui red basic cancel inverted button">
+                <i class="remove fas fa-times"></i>
+                Close
+            </div>
+        </div>
+    </div>
+
+    <div class="ui basic modal remove-video">
+        <div class="ui icon header">
+            <p><i class="fas fa-times remove-video-modal-icon"></i></p>
+            <p>Remove video</p>
+        </div>
+        <div class="content center">
+            <p>Are you sure that you want to remove video from your collection?</p>
+        </div>
+        <div class="actions">
+            <div class="ui red basic cancel inverted button">
+                <i class="fas fa-times"></i>
+                No
+            </div>
+            <div class="ui green ok inverted button remove-video-confirm" data-id="">
+                <i class="fas fa-check"></i>
+                Yes
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/ui.js"></script>
+    <script src="/js/global.js"></script>
+    <script src="/js/library.js"></script>
+    <script src="/js/core.js"></script>
+    <script src="/js/listeners.js"></script>
+
+    <script src="/js/font-awesome.js"></script>
+</body>
+
+</html>
